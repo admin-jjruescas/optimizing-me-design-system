@@ -1,0 +1,30 @@
+/* Optimizing Me — Effects: radii, shadows, gradients, motion.
+   Brand feel: rounded/organic, generous whitespace, soft depth. */
+:root {
+  /* Radii — brand prefers rounded/organic over sharp geometry */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* Shadows — soft, low-contrast (brand avoids strong contrasts) */
+  --shadow-sm: 0 1px 2px rgba(19,46,65,0.06), 0 1px 3px rgba(19,46,65,0.05);
+  --shadow-md: 0 6px 18px rgba(19,46,65,0.08), 0 2px 6px rgba(19,46,65,0.05);
+  --shadow-lg: 0 20px 48px rgba(19,46,65,0.14), 0 6px 16px rgba(19,46,65,0.08);
+  --shadow-accent: 0 10px 26px rgba(239,125,19,0.28);
+
+  /* Official brand gradients (color-palette.md) */
+  --gradient-warm:    linear-gradient(135deg, #F09192, #EF7D13); /* @kind color */
+  --gradient-dynamic: linear-gradient(135deg, #EF7D13, #7592BE); /* @kind color */
+  --gradient-cool:    linear-gradient(135deg, #7592BE, #132E41); /* @kind color */
+  --gradient-bold:    linear-gradient(135deg, #132E41, #F09192); /* @kind color */
+  --gradient-soft:    linear-gradient(135deg, #F09192, #F3DDD0); /* @kind color */
+
+  /* Motion — calm, no bounce. Nervous-system-regulating pace. */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);   /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);       /* @kind other */
+  --dur-fast: 140ms;   /* @kind other */
+  --dur-base: 240ms;   /* @kind other */
+  --dur-slow: 420ms;   /* @kind other */
+}

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Spacing" viewport="700x270" name="Interaction states" subtitle="Hover, press, focus — calm, no bounce" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;font-family:var(--font-sans);background:var(--cream-50);padding:24px;color:var(--brand-navy)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cell{background:#fff;border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;display:flex;flex-direction:column;gap:10px;align-items:flex-start}
+.lab{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted)}
+.btn{display:inline-flex;padding:11px 22px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;font-size:14px}
+.btn.hover{background:var(--accent-hover);transform:translateY(-1px);box-shadow:var(--shadow-accent)}
+.btn.press{transform:translateY(0)}
+.inp{width:100%;padding:10px 12px;border:1.5px solid var(--border-subtle);border-radius:var(--radius-md);font-size:13px;font-family:inherit;color:var(--text-muted)}
+.inp.focus{border-color:var(--accent);box-shadow:0 0 0 4px rgba(239,125,19,.14)}
+.note{grid-column:1/-1;font-size:12.5px;line-height:1.6;color:var(--text-muted);margin:4px 2px 0}
+.note b{color:var(--brand-navy)}</style></head>
+<body><div class="grid">
+<div class="cell"><span class="lab">Rest</span><span class="btn">Start</span><input class="inp" value="Email" readonly></div>
+<div class="cell"><span class="lab">Hover · darken +1px lift</span><span class="btn hover">Start</span><input class="inp" value="Email" readonly></div>
+<div class="cell"><span class="lab">Press · settle back</span><span class="btn press">Start</span><input class="inp" value="Email" readonly></div>
+<div class="cell"><span class="lab">Focus · orange ring</span><span class="btn">Start</span><input class="inp focus" value="Email|" readonly></div>
+<p class="note"><b>Rules:</b> hover darkens fills (lightens on dark scope) + 1px lift; press settles back to baseline — never shrink/bounce; focus = 1.5px orange border + 4px soft orange ring (rgba 239,125,19,.14); links dim to 72% opacity; cards lift 4px w/ shadow-lg. Timing: 140ms standard ease (240ms for cards/switches).</p>
+</div></body></html>

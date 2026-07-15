@@ -1,0 +1,29 @@
+<!-- @dsCard group="Slides" viewport="1080x1080" name="03 · Photo + Brand Shape" subtitle="Template Pattern 3 — Photo blob mask" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+*{box-sizing:border-box}body{margin:0}
+.slide{width:1080px;height:1080px;font-family:var(--font-sans);background:var(--cream-50);position:relative;overflow:hidden;display:grid;grid-template-columns:1fr 1fr}
+.left{padding:110px 70px 110px 110px;display:flex;flex-direction:column;justify-content:center}
+.eb{font-size:22px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--brand-orange)}
+h2{font-family:var(--font-display);font-weight:900;font-size:80px;line-height:1.0;color:var(--brand-navy);margin:24px 0 26px}
+p{font-size:30px;line-height:1.5;color:var(--brand-dark);margin:0}
+.right{position:relative;display:grid;place-items:center;background:var(--brand-navy)}
+.right .glow{position:absolute;inset:0;background:radial-gradient(circle at 50% 40%, rgba(239,125,19,.35), transparent 60%)}
+.photo{width:400px;height:400px;object-fit:cover;border-radius:46% 54% 54% 46%/46% 46% 54% 54%;position:relative;box-shadow:var(--shadow-lg)}
+.sig{position:absolute;bottom:70px;left:110px;font-size:24px;font-weight:700;color:var(--text-muted)}
+.name{position:absolute;bottom:70px;right:60px;color:#fff;font-weight:800;font-size:30px;text-align:right}
+.name span{display:block;font-weight:600;font-size:20px;color:var(--peach-200)}
+</style></head>
+<body><div class="slide">
+<div class="left">
+<span class="eb">About</span>
+<h2>Hi, I'm JJ.</h2>
+<p>Human Optimization Strategist. I help high performers optimize the one system they never trained: themselves.</p>
+<div class="sig">optimizando.me</div>
+</div>
+<div class="right">
+<div class="glow"></div>
+<img class="photo" src="../assets/photos/jj-portrait-square-red.jpg" alt="JJ Ruescas">
+<div class="name">JJ Ruescas<span>Optimizing Me</span></div>
+</div>
+</div></body></html>

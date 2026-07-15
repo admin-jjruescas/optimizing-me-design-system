@@ -1,0 +1,69 @@
+/* Optimizing Me — Color tokens
+   Source: brand-identity color-palette.md. Navy dominant, Orange as energy. */
+:root {
+  /* ---- Brand base palette ---- */
+  --brand-navy: #132E41;      /* Primary — backgrounds, logo, text on light */
+  --brand-orange: #EF7D13;    /* Energy — CTAs, highlights */
+  --brand-periwinkle: #7592BE;/* Soft accent — icons, supporting */
+  --brand-pink: #F09192;      /* Warm accent — gradient endpoints */
+  --brand-peach: #F3DDD0;     /* Light surface — soft warm fills */
+  --brand-dark: #222222;      /* Near-black body text on light */
+  --brand-white: #FFFFFF;
+
+  /* ---- Navy scale (derived, for depth on dark UI) ---- */
+  --navy-900: #0C1E2C;
+  --navy-800: #102737;
+  --navy-700: #132E41;  /* = brand-navy */
+  --navy-600: #1C4056;
+  --navy-500: #2A566F;
+  --navy-400: #3F6E89;
+
+  /* ---- Orange scale ---- */
+  --orange-600: #D96A08;
+  --orange-500: #EF7D13;  /* = brand-orange */
+  --orange-400: #F59547;
+  --orange-300: #F8B27E;
+
+  /* ---- Periwinkle scale ---- */
+  --peri-600: #5C77A2;
+  --peri-500: #7592BE;   /* = brand-periwinkle */
+  --peri-300: #A6BADA;
+  --peri-100: #E3EAF4;
+
+  /* ---- Peach / cream scale ---- */
+  --peach-200: #F3DDD0;  /* = brand-peach */
+  --peach-100: #F9EDE4;
+  --cream-50:  #FCF7F3;
+
+  /* ---- Semantic aliases ---- */
+  --bg-page:        var(--brand-white);
+  --bg-page-warm:   var(--cream-50);
+  --bg-inverse:     var(--brand-navy);
+  --surface-card:   var(--brand-white);
+  --surface-soft:   var(--peach-100);
+  --surface-inverse:var(--navy-800);
+
+  --text-strong:    var(--brand-navy);
+  --text-body:      var(--brand-dark);
+  --text-muted:     #5B6B76;
+  --text-on-dark:   var(--brand-white);
+  --text-on-dark-soft: var(--peach-200);
+
+  --accent:         var(--brand-orange);
+  --accent-hover:   var(--orange-600);
+  --accent-soft:    var(--brand-periwinkle);
+
+  --border-subtle:  #E4E9ED;
+  --border-strong:  var(--brand-navy);
+  --border-on-dark: rgba(255,255,255,0.16);
+
+  --focus-ring:     var(--brand-orange);
+
+  /* Pillar colors — HumanOps loop */
+  --pillar-respiration: var(--navy-600);
+  --pillar-emotions:    var(--peri-500);
+  --pillar-movement:    var(--navy-500);
+  --pillar-nutrition:   var(--orange-400);
+  --pillar-mindset:     var(--orange-500);
+  --pillar-recovery:    var(--orange-300);
+}

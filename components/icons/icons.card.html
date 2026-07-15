@@ -1,0 +1,18 @@
+<!-- @dsCard group="Components" viewport="700x240" name="Icons" subtitle="Curated outline glyph set — 2px stroke, Lucide idiom" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<style>body{margin:0;font-family:var(--font-sans);background:var(--cream-50);padding:24px;color:var(--brand-navy)}
+.grid{display:grid;grid-template-columns:repeat(9,1fr);gap:14px 8px}
+.c{display:flex;flex-direction:column;align-items:center;gap:6px}
+.c span{font-size:9.5px;font-weight:600;color:var(--text-muted)}</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script></head>
+<body><div id="root"></div>
+<script type="text/babel">
+const { Icon } = window.OptimizingMeDesignSystem_7c7534;
+const names = ['wind','heart','activity','lightbulb','apple','moon','brain','infinity','sparkles','arrow-right','arrow-left','menu','x','check','mail','play','clock','users','chevron-down','chevron-up','chevron-right','calendar','quote','mic','video'];
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <div className="grid">{names.map(n=><div className="c" key={n}><Icon name={n} size={24}/><span>{n}</span></div>)}</div>
+);
+</script></body></html>

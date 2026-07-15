@@ -1,0 +1,28 @@
+/* Optimizing Me — Inverse (dark) scope.
+   Apply class="theme-dark" (or data-theme="dark") to any container — typically
+   a navy section — and the semantic aliases remap so the same components work.
+   Base palette values stay identical; only semantic roles flip. */
+.theme-dark, [data-theme="dark"] {
+  --bg-page:        var(--brand-navy);
+  --bg-page-warm:   var(--navy-800);
+  --bg-inverse:     var(--brand-white);
+  --surface-card:   var(--navy-800);
+  --surface-soft:   var(--navy-600);
+  --surface-inverse:var(--brand-white);
+
+  --text-strong:    var(--brand-white);
+  --text-body:      var(--peach-200);
+  --text-muted:     var(--peri-300);
+  --text-on-dark:   var(--brand-navy);
+  --text-on-dark-soft: var(--navy-600);
+
+  --accent:         var(--brand-orange);   /* orange stays the energy accent */
+  --accent-hover:   var(--orange-400);     /* hover LIGHTENS on dark */
+  --accent-soft:    var(--peri-300);
+
+  --border-subtle:  rgba(255,255,255,0.14);
+  --border-strong:  var(--brand-white);
+  --border-on-dark: rgba(19,46,65,0.2);
+
+  color: var(--text-body);
+}

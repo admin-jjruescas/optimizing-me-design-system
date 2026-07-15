@@ -1,0 +1,50 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Optimizing Me — JJ Ruescas</title>
+<meta name="ext-resource-dependency" content="../../assets/logos/logo-jj-tagline-blue.png" data-resource-id="logoBlue" />
+<meta name="ext-resource-dependency" content="../../assets/logos/logo-jj-tagline-white.png" data-resource-id="logoWhite" />
+<meta name="ext-resource-dependency" content="../../assets/logos/symbol-white.png" data-resource-id="symbolWhite" />
+<meta name="ext-resource-dependency" content="../../assets/photos/jj-portrait-square-red.jpg" data-resource-id="portrait" />
+<meta name="ext-resource-dependency" content="../../assets/diagrams/humanops-infinite-loop.png" data-resource-id="humanops" />
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  *{box-sizing:border-box}html,body{margin:0}
+  body{background:var(--bg-page)}
+  a:hover{opacity:.72}a{transition:opacity var(--dur-fast) var(--ease-standard)}
+  .mob-only{display:none}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .prog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .quote-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .radial{position:absolute;top:-140px;right:-160px;width:520px;height:520px;border-radius:50%;
+    background:radial-gradient(circle at center, rgba(117,146,190,.28), transparent 62%);pointer-events:none}
+  @media(max-width:900px){
+    .desk-nav{display:none!important}.mob-only{display:inline-flex}
+    .hero-grid{grid-template-columns:1fr;gap:32px}
+    .pillar-grid{grid-template-columns:1fr 1fr}
+    .prog-grid,.quote-grid{grid-template-columns:1fr}
+    .form-row{flex-direction:column!important}
+  }
+  @media(max-width:560px){.pillar-grid{grid-template-columns:1fr}}
+</style>
+<template id="__bundler_thumbnail" data-bg-color="#132E41">
+  <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1200" height="800" fill="#132E41"/>
+    <g fill="none" stroke="#7592BE" stroke-width="14" stroke-linecap="round">
+      <path d="M470 400c0-70-56-118-120-118s-116 52-116 118 52 118 116 118c90 0 130-236 220-236 64 0 116 52 116 118s-52 118-116 118-120-48-120-118"/>
+    </g>
+    <circle cx="600" cy="640" r="30" fill="#EF7D13"/>
+  </svg>
+</template>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="icons.jsx"></script>
+<script type="text/babel" src="parts.standalone.jsx"></script>
+<script type="text/babel">
+  ReactDOM.createRoot(document.getElementById('root')).render(<Site />);
+</script>
+</body></html>

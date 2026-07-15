@@ -1,0 +1,13 @@
+<!-- @dsCard group="Colors" viewport="700x210" name="Dark scope (.theme-dark)" subtitle="Same components, remapped semantic tokens" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>body{margin:0;font-family:var(--font-sans);display:flex}
+.half{flex:1;padding:22px;background:var(--bg-page-warm);color:var(--text-body)}
+.card{background:var(--surface-card);border:1px solid var(--border-subtle);border-radius:var(--radius-md);padding:16px;box-shadow:var(--shadow-sm)}
+h4{margin:0 0 6px;font-size:15px;font-weight:800;color:var(--text-strong)}
+p{margin:0 0 12px;font-size:12.5px;line-height:1.55;color:var(--text-muted)}
+.btn{display:inline-flex;padding:9px 18px;border-radius:999px;background:var(--accent);color:#fff;font-weight:600;font-size:12.5px}
+.tag{position:absolute;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-top:10px;color:var(--text-muted)}</style></head>
+<body>
+<div class="half"><div class="card"><h4>Light (default)</h4><p>Semantic tokens: --surface-card, --text-strong, --text-muted, --accent.</p><span class="btn">Start optimizing</span></div><span class="tag">:root scope</span></div>
+<div class="half theme-dark"><div class="card"><h4>Dark (.theme-dark)</h4><p>Identical markup — aliases remap to navy surfaces; hover lightens instead of darkens.</p><span class="btn">Start optimizing</span></div><span class="tag">.theme-dark scope</span></div>
+</body></html>

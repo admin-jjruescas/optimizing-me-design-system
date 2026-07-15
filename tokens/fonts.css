@@ -1,0 +1,13 @@
+/* Optimizing Me — Webfonts
+   Montserrat = digital workhorse (Google Fonts).
+   TT Phobos (TypeType) = the brand "highlight"/display font — TRIAL license files;
+   replace with licensed binaries at the same paths before commercial production use. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&display=swap');
+
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-Light.otf') format('opentype'); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-Regular.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-Italic.otf') format('opentype'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-DemiBold.otf') format('opentype'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-Bold.otf') format('opentype'); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-ExtraBold.otf') format('opentype'); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: 'TT Phobos'; src: url('../assets/fonts/TTPhobos-Black.otf') format('opentype'); font-weight: 900; font-style: normal; font-display: swap; }
